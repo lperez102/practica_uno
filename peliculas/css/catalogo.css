@@ -1,0 +1,54 @@
+/* =================================
+   catalogo.html — estilos específicos
+================================= */
+
+
+/* =========================
+   ESTRUCTURA DE TARJETAS
+========================= */
+
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card .pad{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+}
+
+.card p{
+  flex-grow: 1;
+}
+
+.card .btn{
+  margin-top: auto;
+}
+
+
+/* =========================
+   IMÁGENES DE PELÍCULAS
+========================= */
+
+.card img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   MOBILE — posters más pequeños
+========================= */
+
+@media (max-width: 599px){
+
+  .card img{
+    height: 150px;
+  }
+
+}

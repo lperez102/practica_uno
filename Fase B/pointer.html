@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Pointer</title>
+    <link rel="stylesheet" href="/Fase B/css/styles_faseb.css">
+    <link rel="stylesheet" href="/Fase B/css/styles_queries.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Media Query: Pointer</h1>
+
+        <p>
+            Exploración de la media query pointer y su comportamiento en diferentes dispositivos.
+        </p>
+
+        <nav class="nav">
+            <a href="index_faseB.html">Inicio</a>
+            <a href="pointer.html">Pointer</a>
+            <a href="motion.html">Reduced Motion</a>
+            <a href="height.html">Min Height</a>
+            <a href="ratio.html">Aspect Ratio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+
+            <h2>¿Qué es la media query POINTER?</h2>
+
+            <p>
+                La media query <strong>pointer</strong> permite detectar qué tipo de dispositivo de entrada
+                utiliza el usuario para interactuar con la página. Esto puede ser un mouse, un dedo en una
+                pantalla táctil o incluso un stylus.
+            </p>
+
+            <p>
+                Dependiendo del dispositivo, la precisión del puntero puede cambiar. Por ejemplo, un mouse
+                es muy preciso, mientras que el dedo en una pantalla táctil es menos preciso. Por esta razón,
+                esta media query permite adaptar el diseño según el tipo de puntero disponible.
+            </p>
+
+            <h2>¿Cuándo se utiliza?</h2>
+
+            <p>
+                Se utiliza cuando queremos ajustar la interfaz dependiendo de la precisión del dispositivo
+                de entrada. Por ejemplo:
+            </p>
+
+            <ul>
+                <li>Aumentar el tamaño de botones en pantallas táctiles</li>
+                <li>Separar más los elementos interactivos</li>
+                <li>Mejorar la accesibilidad para usuarios de dispositivos móviles</li>
+                <li>Optimizar la interacción para mouse o pantallas táctiles</li>
+            </ul>
+
+            <p>
+                Esto ayuda a que los elementos sean más fáciles de usar dependiendo del tipo de dispositivo
+                con el que el usuario interactúa.
+            </p>
+
+            <h2>Ejemplo práctico</h2>
+
+            <p>
+                En este ejemplo, el botón cambia su tamaño cuando el dispositivo utiliza un puntero menos
+                preciso, como una pantalla táctil.
+            </p>
+
+            <div class="example-box">
+                <button class="pointer-demo">
+                    Botón interactivo
+                </button>
+            </div>
+
+            <h2>Media query utilizada</h2>
+
+            <p class="code-line">@media (pointer: coarse)</p>
+
+            <p>
+                Dentro de esta regla se pueden modificar estilos para dispositivos táctiles, donde la
+                precisión del puntero es menor.
+            </p>
+
+            <h2>Conclusión</h2>
+
+            <p>
+                La media query pointer permite adaptar la interfaz según el tipo de dispositivo de entrada
+                que utiliza el usuario. Esto ayuda a mejorar la usabilidad, especialmente en dispositivos
+                táctiles donde los elementos necesitan ser más grandes y fáciles de presionar.
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Tarea 2 — Diseño Web I — Laura Pérez — 8 de marzo 2026</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query prefers-reduced-motion</title>
+    <link rel="stylesheet" href="/Fase B/css/styles_faseb.css">
+    <link rel="stylesheet" href="/Fase B/css/styles_queries.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Media Query: prefers-reduced-motion</h1>
+
+        <p>
+            Exploración de la media query prefers-reduced-motion y cómo permite
+            reducir animaciones para mejorar la accesibilidad.
+        </p>
+
+        <nav class="nav">
+            <a href="index_faseB.html">Inicio</a>
+            <a href="pointer.html">Pointer</a>
+            <a href="motion.html">Reduced Motion</a>
+            <a href="height.html">Min Height</a>
+            <a href="ratio.html">Aspect Ratio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+
+            <h2>¿Qué es PREFERS-REDUCED-MOTION?</h2>
+
+            <p>
+                La media query <strong>prefers-reduced-motion</strong> detecta si el usuario
+                ha configurado su sistema para reducir las animaciones.
+            </p>
+
+            <p>
+                Algunas personas prefieren menos movimiento en las interfaces porque
+                las animaciones pueden causar distracción, mareo o incomodidad visual.
+                Esta media query permite adaptar el diseño para ofrecer una experiencia
+                más accesible.
+            </p>
+
+            <h2>¿Cuándo se utiliza?</h2>
+
+            <p>
+                Se utiliza cuando un sitio web tiene animaciones o transiciones que pueden
+                ser reducidas para mejorar la accesibilidad. Por ejemplo:
+            </p>
+
+            <ul>
+                <li>Desactivar animaciones largas</li>
+                <li>Reducir efectos de movimiento</li>
+                <li>Eliminar transiciones complejas</li>
+                <li>Crear interfaces más cómodas para algunos usuarios</li>
+            </ul>
+
+            <h2>Ejemplo práctico</h2>
+
+            <p>
+                En este ejemplo, el elemento normalmente tiene una animación.
+                Pero si el usuario ha configurado su sistema para reducir movimiento,
+                la animación se desactiva.
+            </p>
+
+            <div class="example-box">
+                <div class="motion-demo">
+                    Animación de ejemplo
+                </div>
+            </div>
+
+            <h2>Media query utilizada</h2>
+
+            <p class="code-line">@media (prefers-reduced-motion: reduce)</p>
+
+            <p>
+                Dentro de esta regla se pueden eliminar animaciones o transiciones
+                para respetar la preferencia del usuario.
+            </p>
+
+            <h2>Conclusión</h2>
+
+            <p>
+                La media query prefers-reduced-motion permite crear interfaces más
+                accesibles adaptándose a las preferencias del usuario. De esta forma,
+                los sitios web pueden ofrecer experiencias más cómodas para personas
+                sensibles al movimiento.
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Tarea 2 — Diseño Web I — Laura Pérez — 8 de marzo 2026</p>
+    </footer>
+
+</body>
+
+</html>

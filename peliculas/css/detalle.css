@@ -1,0 +1,97 @@
+/* =================================
+   detalle.html — estilos específicos
+================================= */
+
+/* Ajusta el ancho de lectura */
+.section .wrapper {
+  max-width: 1100px;
+}
+
+/* Tarjeta principal */
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero-card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Imagen principal */
+.hero-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Grid de temas y fechas */
+.grid {
+  align-items: stretch;
+}
+
+/* Tarjetas internas */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card .pad {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.7rem;
+}
+
+.card p {
+  flex-grow: 1;
+}
+
+/* Botones alineados abajo */
+.card .btn,
+.hero-card .btn {
+  margin-top: auto;
+}
+
+/* Bloque de información lateral */
+aside.hero-card .card {
+  box-shadow: none;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 600px) {
+  .hero-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+  .section .wrapper {
+    max-width: 1200px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 599px) {
+  .hero-card img {
+    height: 220px;
+  }
+
+  .section {
+    padding: 1rem 0 1.4rem;
+  }
+}

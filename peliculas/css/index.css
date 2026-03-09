@@ -1,0 +1,111 @@
+/* =================================
+   index.html — estilos específicos
+================================= */
+
+/* =========================
+   ALINEACIÓN DE TARJETAS
+========================= */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card .pad {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card .pad p {
+  flex-grow: 1;
+}
+
+.card .btn {
+  margin-top: auto;
+}
+
+/* =========================
+   TABLET — 600px o más
+   El contenido pasa a dos columnas
+========================= */
+
+@media (min-width: 600px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+/* =========================
+   DESKTOP — 1024px o más
+   Más columnas y mejor uso del espacio
+========================= */
+
+@media (min-width: 1024px) {
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .wrapper {
+    width: min(1300px, 92%);
+  }
+
+  /* Ajuste específico para el bloque de actividades del club */
+  aside.hero-card .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+
+  aside.hero-card .card {
+    min-height: 220px;
+  }
+
+  aside.hero-card .card .pad {
+    padding: 1rem;
+  }
+
+}
+
+/* =========================
+   TIPOGRAFÍA EN DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+}
+
+/* =========================
+   MOBILE — menos de 600px
+========================= */
+
+@media (max-width: 599px) {
+
+  /* Oculta el panel derecho del hero */
+  aside.hero-card {
+    display: none;
+  }
+
+  /* Posters más pequeños en móvil */
+  .card img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+}

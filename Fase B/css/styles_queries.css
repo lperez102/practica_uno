@@ -1,0 +1,82 @@
+/* =====================================================
+   MEDIA QUERY: HOVER
+   Detecta si el dispositivo permite interacción
+   al pasar el cursor sobre un elemento (mouse o trackpad).
+===================================================== */
+
+@media (hover: hover){
+
+    .card-demo:hover{
+        transform: scale(1.08);
+        background: #c807ae;
+        color: white;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+}
+
+
+/* =====================================================
+   MEDIA QUERY: POINTER
+   Detecta el tipo de puntero del dispositivo.
+   "coarse" indica interacción táctil (pantallas touch).
+===================================================== */
+
+@media (pointer: coarse){
+
+    .pointer-demo{
+        padding: 2rem;
+        font-size: 1.5rem;
+        background: black;
+        color: white;
+    }
+
+}
+
+
+/* =====================================================
+   MEDIA QUERY: PREFERS REDUCED MOTION
+   Detecta si el usuario prefiere reducir animaciones
+   por accesibilidad o comodidad visual.
+===================================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    .motion-demo{
+        animation: none;
+    }
+
+}
+
+
+/* =====================================================
+   MEDIA QUERY: MIN HEIGHT
+   Aplica estilos cuando la altura de la pantalla
+   es igual o mayor al valor definido.
+===================================================== */
+
+@media (min-height: 700px){
+
+    .height-demo{
+        height: 220px;
+        background: #df0dbc;
+        color: white;
+    }
+
+}
+
+
+/* =====================================================
+   MEDIA QUERY: ASPECT RATIO
+   Detecta la proporción entre ancho y alto de la pantalla.
+   En este caso se aplica cuando la pantalla es más vertical.
+===================================================== */
+
+@media (max-aspect-ratio: 3/4){
+
+    .ratio-demo{
+        background: #333;
+        color: white;
+    }
+
+}

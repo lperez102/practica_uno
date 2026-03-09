@@ -1,0 +1,259 @@
+/* =========================
+   RESET GENERAL
+========================= */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY / LAYOUT GENERAL
+========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.site-header h1{
+    margin-bottom: 0.5rem;
+}
+
+.site-header p{
+    margin-bottom: 1rem;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.nav a{
+    text-decoration: none;
+    background: white;
+    color: #222;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.nav a:hover{
+    background: #e5e5e5;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main{
+    flex: 1;
+    min-height: 0;
+    padding: 2rem 1rem;
+}
+
+
+/* =========================
+   CONTENIDO GENERAL
+========================= */
+
+.content{
+    max-width: 850px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.content h2{
+    margin: 1.5rem 0 0.8rem;
+    text-align: center;
+}
+
+.content p{
+    margin-bottom: 1rem;
+}
+
+.content ul{
+    margin: 0 0 1rem 1.5rem;
+}
+
+.content li{
+    margin-bottom: 0.4rem;
+}
+
+
+/* =========================
+   ELEMENTOS VISUALES
+========================= */
+
+/* Caja que contiene los ejemplos */
+
+.example-box{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+/* Bloque para mostrar código */
+
+.code-line{
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    background: #f0f0f0;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    font-family: Consolas, monospace;
+}
+
+
+/* Imagen del index */
+
+.hero-image{
+    margin: 40px 0;
+}
+
+.hero-image img{
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   DEMOS DE MEDIA QUERIES
+========================= */
+
+/* Hover demo */
+
+.card-demo{
+    width: 260px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    font-weight: bold;
+
+    transition: transform 0.3s ease,
+                background 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Pointer demo */
+
+.pointer-demo{
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background: #e5e5e5;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* Reduced motion demo */
+
+.motion-demo{
+    width: 260px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+
+    animation: bounce 2s infinite;
+}
+
+
+/* Animación utilizada */
+
+@keyframes bounce{
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+
+/* Min-height demo */
+
+.height-demo{
+    width: 260px;
+    height: 120px;
+    margin: 0 auto;
+    background: #e5e5e5;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+/* Aspect-ratio demo */
+
+.ratio-demo{
+    width: 100%;
+    max-width: 500px;
+
+    aspect-ratio: 16/9;
+
+    margin: 0 auto;
+    background: #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

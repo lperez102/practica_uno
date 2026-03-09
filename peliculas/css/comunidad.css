@@ -1,0 +1,57 @@
+/* =================================
+   comunidad.html — estilos específicos
+================================= */
+
+
+/* =========================
+   ALINEAR TARJETAS
+========================= */
+
+.grid {
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card .pad {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card .muted:first-of-type {
+  flex-grow: 1;
+}
+
+.card .btn {
+  margin-top: auto;
+}
+
+
+/* =========================
+   IMÁGENES
+========================= */
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 599px) {
+
+  .card img {
+    height: 150px;   /* imágenes más pequeñas en móvil */
+  }
+
+}

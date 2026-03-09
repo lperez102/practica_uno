@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Aspect Ratio</title>
+
+    <link rel="stylesheet" href="/Fase B/css/styles_faseb.css">
+    <link rel="stylesheet" href="/Fase B/css/styles_queries.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>Media Query: Aspect Ratio</h1>
+
+<p>
+Exploración de la media query aspect-ratio y cómo permite adaptar el diseño
+según la proporción de la pantalla.
+</p>
+
+<nav class="nav">
+<a href="index_faseB.html">Inicio</a>
+<a href="pointer.html">Pointer</a>
+<a href="motion.html">Reduced Motion</a>
+<a href="height.html">Min Height</a>
+<a href="ratio.html">Aspect Ratio</a>
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="content">
+
+<h2>¿Qué es la media query ASPECT-RATIO?</h2>
+
+<p>
+La media query <strong>aspect-ratio</strong> permite aplicar estilos dependiendo
+de la relación entre el ancho y la altura de la pantalla.
+</p>
+
+<p>
+Esto significa que el diseño puede adaptarse si la pantalla es más
+horizontal o más vertical.
+</p>
+
+
+<h2>¿Cuándo se utiliza?</h2>
+
+<p>
+Se utiliza cuando queremos ajustar el diseño dependiendo de la forma
+de la pantalla. Por ejemplo:
+</p>
+
+<ul>
+<li>Adaptar layouts para pantallas panorámicas</li>
+<li>Ajustar contenido en móviles verticales</li>
+<li>Optimizar diseños para videos o imágenes</li>
+</ul>
+
+
+<h2>Ejemplo práctico</h2>
+
+<p>
+En este ejemplo, la caja mantiene una proporción de video 16:9.
+Además, cambia de color dependiendo de la proporción de la pantalla.
+</p>
+
+<div class="example-box">
+
+<div class="ratio-demo">
+Caja 16:9
+</div>
+
+</div>
+
+
+<h2>Media query utilizada</h2>
+
+<p class="code-line">@media (aspect-ratio: 16/9)</p>
+
+<p>
+Dentro de esta regla se aplican estilos cuando la proporción de la
+pantalla coincide con una relación de 16:9.
+</p>
+
+
+<h2>Conclusión</h2>
+
+<p>
+La media query aspect-ratio permite adaptar el diseño según la forma
+de la pantalla, lo que ayuda a optimizar la presentación del contenido
+en distintos dispositivos.
+</p>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+<p>Tarea 2 — Diseño Web I — Laura Pérez — 8 de marzo 2026</p>
+</footer>
+
+</body>
+</html>

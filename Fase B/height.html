@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Min Height</title>
+    <link rel="stylesheet" href="/Fase B/css/styles_faseb.css">
+    <link rel="stylesheet" href="/Fase B/css/styles_queries.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Media Query: Min Height</h1>
+
+        <p>
+            Exploración de la media query min-height y cómo permite adaptar
+            el diseño según la altura de la pantalla.
+        </p>
+
+        <nav class="nav">
+            <a href="index_faseB.html">Inicio</a>
+            <a href="pointer.html">Pointer</a>
+            <a href="motion.html">Reduced Motion</a>
+            <a href="height.html">Min Height</a>
+            <a href="ratio.html">Aspect Ratio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+
+            <h2>¿Qué es la media query MIN-HEIGHT?</h2>
+
+            <p>
+                La media query <strong>min-height</strong> permite aplicar estilos cuando
+                la altura de la pantalla es mayor o igual a un valor específico.
+            </p>
+
+            <p>
+                Esto significa que el diseño puede cambiar dependiendo del espacio
+                vertical disponible en la pantalla del usuario.
+            </p>
+
+            <h2>¿Cuándo se utiliza?</h2>
+
+            <p>
+                Se utiliza cuando queremos aprovechar mejor pantallas con mayor altura.
+                Por ejemplo:
+            </p>
+
+            <ul>
+                <li>Agrandar secciones en pantallas grandes</li>
+                <li>Aumentar el espacio entre elementos</li>
+                <li>Mostrar contenido adicional</li>
+                <li>Adaptar layouts para pantallas grandes</li>
+            </ul>
+
+            <h2>Ejemplo práctico</h2>
+
+            <p>
+                En este ejemplo, la caja aumenta su altura cuando la pantalla
+                tiene suficiente espacio vertical.
+            </p>
+
+            <div class="example-box">
+
+                <div class="height-demo">
+                    Caja adaptable
+                </div>
+
+            </div>
+
+            <h2>Media query utilizada</h2>
+
+            <p class="code-line">@media (min-height: 700px)</p>
+
+            <p>
+                Dentro de esta regla se cambian los estilos cuando la altura
+                de la pantalla es mayor o igual a 700px.
+            </p>
+
+            <h2>Conclusión</h2>
+
+            <p>
+                La media query min-height permite adaptar el diseño dependiendo
+                de la altura de la pantalla, lo que ayuda a aprovechar mejor
+                el espacio disponible en diferentes dispositivos.
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Tarea 2 — Diseño Web I — Laura Pérez — 8 de marzo 2026</p>
+    </footer>
+
+</body>
+
+</html>

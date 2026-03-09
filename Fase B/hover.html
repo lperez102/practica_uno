@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Hover</title>
+    <link rel="stylesheet" href="/Fase B/css/styles_faseb.css">
+    <link rel="stylesheet" href="/Fase B/css/styles_queries.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Media Query: Hover</h1>
+
+        <p>
+            Exploración de la media query hover y su comportamiento en diferentes dispositivos.
+        </p>
+
+        <nav class="nav">
+            <a href="index_faseB.html">Inicio</a>
+            <a href="pointer.html">Pointer</a>
+            <a href="motion.html">Reduced Motion</a>
+            <a href="height.html">Min Height</a>
+            <a href="ratio.html">Aspect Ratio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+
+            <h2>¿Qué es la media query HOVER?</h2>
+
+            <p>
+                La media query <strong>hover</strong> permite detectar si el dispositivo del usuario
+                puede interactuar al pasar el cursor sobre un elemento. Esto sucede normalmente en
+                computadoras con mouse o trackpad.
+            </p>
+
+            <p>
+                En muchos dispositivos móviles esta acción no existe, porque la interacción ocurre
+                tocando directamente la pantalla. Por eso esta media query permite aplicar estilos
+                solo cuando el dispositivo realmente soporta hover.
+            </p>
+
+            <h2>¿Cuándo se utiliza?</h2>
+
+            <p>
+                Se utiliza cuando queremos agregar efectos visuales que dependen del cursor. Por ejemplo:
+            </p>
+
+            <ul>
+                <li>Cambiar el color de un botón</li>
+                <li>Agrandar una tarjeta</li>
+                <li>Resaltar enlaces</li>
+                <li>Mostrar información adicional</li>
+            </ul>
+
+            <p>
+                Esto permite que la experiencia sea mejor en computadoras, sin depender de interacciones
+                que no existen en pantallas táctiles.
+            </p>
+
+            <h2>Ejemplo práctico</h2>
+
+            <p>
+                En el siguiente ejemplo, la tarjeta cambia cuando el usuario pasa el cursor sobre ella.
+            </p>
+
+            <div class="example-box">
+                <div class="card-demo">
+                    Pasa el cursor aquí
+                </div>
+            </div>
+
+            <h2>Media query utilizada</h2>
+
+            <p class="code-line">@media (hover: hover)</p>
+
+            <p>
+                Dentro de esta regla se usa también <strong>:hover</strong> para cambiar el estilo
+                del elemento cuando el cursor pasa sobre él.
+            </p>
+
+            <h2>Conclusión</h2>
+
+            <p>
+                La media query hover ayuda a crear estilos más adecuados según el tipo de dispositivo.
+                De esta forma, la interfaz puede aprovechar mejor las interacciones de escritorio sin
+                depender de acciones que no existen en dispositivos táctiles.
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Tarea 2 — Diseño Web I — Laura Pérez — 8 de marzo 2026</p>
+    </footer>
+
+</body>
+
+</html>
